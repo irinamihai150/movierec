@@ -10,7 +10,7 @@ const App = () => {
 		const prompt = `Please suggest movies based on specific genres, plot elements, or any preferences you think would suit my taste:${inputText}`
 		const payload = {
 			model: "text-davinci-003",
-			prompt: `What are some movie recommendations you can provide? Please suggest movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${inputText}`,
+			prompt: `Please suggest 5 movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${inputText}`,
 			max_tokens: 100,
 		}
 

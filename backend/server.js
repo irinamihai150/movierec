@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.post("/api/recommendations", (req, res) => {
 	const apiKey = process.env.OPENAI_API_KEY
 	const apiUrl = "https://api.openai.com/v1/completions"
-	const prompt = `Please suggest movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${req.body.inputText}`
+	const prompt = `Please suggest 5 movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${req.body.inputText}`
 
 	axios
 		.post(
