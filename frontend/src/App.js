@@ -7,10 +7,10 @@ const App = () => {
 	const handleButtonClick = () => {
 		const apiUrl = "http://localhost:5000/api/recommendations"
 
-		const prompt = `Please suggest movies based on specific genres, plot elements, or any preferences you think would suit my taste:${inputText}`
+	
 		const payload = {
 			model: "text-davinci-003",
-			prompt: `Please suggest 5 movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${inputText}`,
+			prompt: `Please suggest movies based on specific genres, plot elements, or any preferences you think would suit my taste: ${inputText}`,
 			max_tokens: 100,
 		}
 
